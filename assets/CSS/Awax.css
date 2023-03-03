@@ -409,13 +409,17 @@ CSS DE ÁREAS ESPECÍFICAS
 
 .section-projects--photoarea{
     margin: 10px;
+    display: flex;
     width: 260px;
     height: 160px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-projects--photoarea img{
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
 } 
 
 .section-projects--photInfo{
@@ -438,9 +442,14 @@ CSS DE ÁREAS ESPECÍFICAS
 }
 
 .section-projects--photoarea:hover .section-projects--photInfo{
-    display: flex;
-   
+    display: flex; 
+    
 }
+
+.section-projects--photoarea:hover .section-projects--photoarea img{
+    width: 130%;
+    height: 130%;
+} 
 
 .section-projects a{
     display: inline-block;
@@ -1186,5 +1195,3 @@ footer{
     display: flex;
     flex-direction: column;
 }
-
-@media
